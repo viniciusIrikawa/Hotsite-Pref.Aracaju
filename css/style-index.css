@@ -27,6 +27,15 @@ body{
 }
 
 /* SECTION-CARDS */ 
+@font-face{
+    src: url(/fonts/AmsiProCond-Regular.otf);
+    font-family: AmsiProCond-Regular;
+}
+@font-face{
+    src: url(/fonts/AmsiProCond-Black.otf);
+    font-family: AmsiProCond-Black;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -59,7 +68,8 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #717171;
-    font-family: sans-serif;    /* ALTERAR FONTE */
+    font-family: AmsiProCond-Regular;
+    font-size: 1.3em;
 }
 
 /* SECTION CONTENTS */
@@ -68,6 +78,9 @@ body{
     height: auto;
     padding: 50px 0;
     background-color: coral;
+}
+.container-content p{
+    color: #fff;
 }
 .container-content .content{
     display: flex;
@@ -88,7 +101,7 @@ body{
     padding: 10px 15px;
     color: #203a62;
     background-color: #fff;
-    font-family: sans-serif;    /* ALTERAR A FONTE */
+    font-family: AmsiProCond-Regular;
     position: absolute;
     top: -20PX;
     left: 5%;
@@ -96,6 +109,8 @@ body{
 .content .text{
     text-align: center;
     margin: 30px 0;
+    letter-spacing: 1px;
+    font-family: AmsiProCond-Regular;
 }
 .content .text p{
     display: block;
@@ -104,7 +119,7 @@ body{
     margin-top: 10px;
     text-decoration: none;
     display: inline-block;
-    font-family: sans-serif;   /* ALTERAR A FONTE */
+    font-family: AmsiProCond-Black;
     padding: 10px 15px;
     font-size: 15px;
     background-color: #fff;
@@ -114,6 +129,14 @@ body{
 }
 
 /* FOOTER */
+@font-face{
+    src: url(/fonts/AmsiProCond-Bold.otf);
+    font-family: AmsiProCond-Bold;
+}
+@font-face{
+    src: url(/fonts/AmsiProCond-Italic.otf);
+    font-family: AmsiProCond-Italic;
+}
 .footer-container{
     width: 100%;
     display: flex;
@@ -124,15 +147,16 @@ body{
 }
 .footer-container div{
     width: 100%;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
     clear: both;
 }
-.footer-container .text{
+.footer-container p{
     color: #49afe8;
-    font-weight: bold;
+    font-family: AmsiProCond-Bold;
 }
 .footer-container img{
     max-width: 180px;
