@@ -20,6 +20,7 @@
         <div class="img-slider"> Carousel </div>
     </section>
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"><img src="img/up-chevron.svg" alt="Top"></button>
         <section id="section-cards">
             <div class="container">
             <div class="border">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="text">
                         <p> Com um projeto que vai fazer a mobilidade urbana de Aracaju avançar ainda mais, as obras da Perimetral Oeste vão entregar à população uma via com mais de 7.5 km de extensão, ligando o Lamarão ao Bugio. </p>
-                        <a href="https://www.google.com/"> Clique aqui e saiba mais </a>
+                        <a href="https://www.google.com/" target="_blank"> Clique aqui e saiba mais </a>
                     </div>
                 </div>
                 <div class="content" id="middle-block">
@@ -59,7 +60,7 @@
                     </div>
                     <div class="text">
                         <p> Praças, escola, unidade de saúde, maternidade e muito mais. Com este programa, a Prefeitura de Aracaju está levando requalificação urbana e infraestrutura para acelerar o desenvolvimento de uma das regiões mais vulneráveis da cidade.  </p>
-                        <a href="https://www.google.com/"> Clique aqui e saiba mais </a>
+                        <a href="https://www.google.com/" target="_blank"> Clique aqui e saiba mais </a>
                     </div>
                 </div>
                 <div class="content" id="final-block"> 
@@ -69,7 +70,7 @@
                     </div>
                     <div class="text">
                         <p> Com este projeto, a Prefeitura de Aracaju está transformando a antiga ocupação das mangabeiras num conjunto residencial que ofertará mais de 1100 moradias dignas a famílias que antes viviam em situação precária. </p>
-                        <a href="https://www.google.com/"> Clique aqui e saiba mais </a>
+                        <a href="https://www.google.com/" target="_blank"> Clique aqui e saiba mais </a>
                     </div>
                 </div>
             </div>
@@ -89,5 +90,15 @@
             </div>
         </div>
     </footer>
+    <!--SCRIPT BOTAO SCROLL TO TOP-->        
+    <script>  
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            window.scroll({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
