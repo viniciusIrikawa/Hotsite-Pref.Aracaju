@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-index.css"> 
+    <!-- ICON FONT AWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Habitação</title>
 </head>
 <body>
@@ -66,7 +68,7 @@
                 <div class="content" id="final-block"> 
                     <div class="img">
                         <img src="img/image3.jpg" alt="">
-                        <h3> Residencial Mangabeiras Irmã Dulce dos Pobres </h3>
+                        <h3> Residencial Mangabeiras <br> Irmã Dulce dos Pobres </h3>
                     </div>
                     <div class="text">
                         <p> Com este projeto, a Prefeitura de Aracaju está transformando a antiga ocupação das mangabeiras num conjunto residencial que ofertará mais de 1100 moradias dignas a famílias que antes viviam em situação precária. </p>
@@ -80,6 +82,7 @@
         <div class="footer-container">
             <div> <p>Lorem Ipsum dolor sit amet consectetur adipiscing </p></div>
             <div class="contact">
+                <span id="span-icon"><i class="fas fa-phone-alt"></i></span>
                 <address>
                     <span id="phrase">Tire suas dúvidas através </span> <br>
                     <span id="phone"> <a> 79 9 9999.9999 </a> </span>
@@ -90,12 +93,10 @@
             </div>
         </div>
     </footer>
-    <!--SCRIPT BOTAO SCROLL TO TOP-->        
+    <!--SCRIPT SCROLL TO TOP BUTTON -->        
     <script>  
-        //Get the button
         var mybutton = document.getElementById("myBtn");
         
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
             window.scroll({top: 0, behavior: 'smooth'});
         }
