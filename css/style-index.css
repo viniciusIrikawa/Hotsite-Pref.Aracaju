@@ -135,7 +135,7 @@ body{
     font-weight: bold;
 }
 .footer-container img{
-    max-width: 250px;
+    max-width: 180px;
 }
 
 @media screen and (min-width: 768px){
