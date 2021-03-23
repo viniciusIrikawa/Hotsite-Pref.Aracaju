@@ -18,8 +18,31 @@
             </div>
         </nav>
     </header>
-    <section id="slider">
-        <div class="img-slider"> Carousel </div>
+    <section id="section-slider">
+        <div id="container-slider">
+            <div class="slideshow-container">
+                <div class="mySlides animated">
+                    <img src="img/img-slide1.jpg">
+                </div>
+            
+                <div class="mySlides animated">
+                    <img src="img/img-slide1.jpg">
+                </div>
+            
+                <div class="mySlides animated">
+                    <img src="img/img-slide1.jpg">
+                </div>
+            
+                <a class="slide-prev" onclick="plusSlides(-1)">❮</a>
+                <a class="slide-next" onclick="plusSlides(1)">❯</a>
+            </div>
+            
+            <div class="slide-dot-control">
+                <span class="slide-dot" onclick="currentSlide(1)"></span>
+                <span class="slide-dot" onclick="currentSlide(2)"></span>
+                <span class="slide-dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
     </section>
     <main>
         <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"><img src="img/up-chevron.svg" alt="Top"></button>
@@ -100,6 +123,34 @@
         function topFunction() {
             window.scroll({top: 0, behavior: 'smooth'});
         }
+    </script>
+
+    <!-- SLIDER  -->
+    <script>
+        var slideIndex = 1;
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            if (slideIndex > slides.length) {slideIndex = 1;}
+            if (slideIndex < 1) {slideIndex = slides.length;}
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+            var dots = document.getElementsByClassName("slide-dot");
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slide-dot-active", "");
+            }
+            dots[slideIndex-1].className += " slide-dot-active";
+        }
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
+        }
+        window.onload = showSlides;
     </script>
 </body>
 </html>

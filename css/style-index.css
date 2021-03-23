@@ -5,6 +5,79 @@
 body{
     background-color: #344c70;
 }
+.mySlides img {
+    width: 100%;
+}
+.slideshow-container {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.slide-prev, .slide-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s ease;
+    border-radius: 0px 10px 10px 0;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.slide-next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.slide-prev:hover, .slide-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+#container-slider{
+    background: #fff;
+    position: relative;
+}
+.slide-dot-control {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-align: center;
+}
+.slide-dot {
+    cursor:pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slide-dot-active, .slide-dot:hover {
+    background-color: #555353;
+}
+
+.animated { 
+   -webkit-animation-name: fadeIn; 
+           animation-name: fadeIn; 
+   -webkit-animation-duration: 1s; 
+           animation-duration: 1s; 
+} 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
 /*BOTAO SCROLL TO TOP*/
 #myBtn {
     position: fixed; 
@@ -38,11 +111,17 @@ body{
     min-width: 200px;
     padding: 0 20px;
 }
-.img-slider{
+
+/* SLIDER */
+/* #slider .img-slider{
     width: 100%;
-    height: 300px;
-    background-color: burlywood;
+    height: auto;
+    background-color: #fff;
 }
+#slider .img-slider img{
+    width: 100%;
+} */
+
 
 /* SECTION-CARDS */ 
 @font-face{
@@ -259,5 +338,28 @@ body{
     }
     .contact i{
         font-size: 25px;
+    }
+
+    /* SLIDER */
+    .slide-prev, .slide-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #fff;
+        font-size: 50px;
+        transition: 0.3s ease;
+        border-radius: 0 10px 10px 0;
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+    .slide-next {
+        right: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .slide-dot{
+        height: 15px;
+        width: 15px;
     }
 }
