@@ -6,19 +6,19 @@ body{
     background-color: #344c70;
 }
 @font-face{
-    src: url(/fonts/AmsiProCond-Regular.otf);
+    src: url(../fonts/AmsiProCond-Regular.otf);
     font-family: AmsiProCond-Regular;
 }
 @font-face{
-    src: url(/fonts/AmsiProCond-Black.otf);
+    src: url(../fonts/AmsiProCond-Black.otf);
     font-family: AmsiProCond-Black;
 }
 @font-face{
-    src: url(/fonts/AmsiProCond-Bold.otf);
+    src: url(../fonts/AmsiProCond-Bold.otf);
     font-family: AmsiProCond-Bold;
 }
 @font-face{
-    src: url(/fonts/AmsiProCond-Italic.otf);
+    src: url(../fonts/AmsiProCond-Italic.otf);
     font-family: AmsiProCond-Italic;
 }
 .mySlides img {
@@ -314,7 +314,7 @@ body{
 
     /* SLIDERS */
     .slider-content{
-        width: 15%;
+        width: 450px;
     }
     .bloco1 .text, .bloco2 .text, .bloco3 .text{
         width: 20%;
@@ -336,9 +336,14 @@ body{
          max-width: 450px;
      }
     /* FOOTER */
+    .footer-container {
+        height: auto;
+        padding: 10px 0;
+    }
     .footer-container div{
-        width: 10%;
+        width: 15%;
         height: 30px;
+        margin: 0 15px;
     }
 
 
