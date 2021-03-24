@@ -5,6 +5,22 @@
 body{
     background-color: #344c70;
 }
+@font-face{
+    src: url(/fonts/AmsiProCond-Regular.otf);
+    font-family: AmsiProCond-Regular;
+}
+@font-face{
+    src: url(/fonts/AmsiProCond-Black.otf);
+    font-family: AmsiProCond-Black;
+}
+@font-face{
+    src: url(/fonts/AmsiProCond-Bold.otf);
+    font-family: AmsiProCond-Bold;
+}
+@font-face{
+    src: url(/fonts/AmsiProCond-Italic.otf);
+    font-family: AmsiProCond-Italic;
+}
 .mySlides img {
     width: 100%;
 }
@@ -113,14 +129,6 @@ body{
 }
 
 /* SECTION-CARDS */ 
-@font-face{
-    src: url(/fonts/AmsiProCond-Regular.otf);
-    font-family: AmsiProCond-Regular;
-}
-@font-face{
-    src: url(/fonts/AmsiProCond-Black.otf);
-    font-family: AmsiProCond-Black;
-}
 
 .container{
     display: flex;
@@ -134,7 +142,6 @@ body{
     width: 250px;
     height: 110px;
     margin: 5vh;
-    /* margin: 30vh auto; */
     position: relative;
     border: 1px solid #898989;
 }
@@ -158,78 +165,75 @@ body{
     font-size: 1.3em;
 }
 
-/* SECTION CONTENTS */
-.container-content{
+/* BLOCOS */
+.bloco1, .bloco2, .bloco3{
     width: 100%;
     height: auto;
     padding: 50px 0;
-}
-.container-content p{
-    color: #fff;
-}
-.container-content .content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-    padding: 30px 0;
 }
-.container-content #middle-block{
-    background-color: #49afe8;
-    padding-top: 60px;
-}
-.container-content #final-block{
-    padding-top: 90px;
-}
-.content .img{
+.slider-content{
+    width: 80%;
     position: relative;
 }
-.content img{
-    border: 2px solid #fff;
-    max-width: 400px;
-    /* min-width: 100px; */
+.bloco2{
+    background-color: #49afe8;
 }
-.content .img h3{
-    font-size: 20px;
-    line-height: 20px;
-    padding: 10px 15px;
-    color: #203a62;
-    background-color: #fff;
-    font-family: AmsiProCond-Regular;
-    position: absolute;
-    top: -20PX;
-    left: 5%;
-}
-.content .text{
+.bloco1 .text, .bloco2 .text, .bloco3 .text{
     text-align: center;
     margin: 30px;
     letter-spacing: 1px;
     font-family: AmsiProCond-Regular;
 }
-.content .text p{
-    display: block;
+.bloco1 .text p, .bloco2 .text p, .bloco3 .text p{
+    font-size: 1.1em;
+    color: #fff;
 }
-.content .text a{
+.bloco1 .text a, .bloco2 .text a, .bloco3 .text a{
     margin-top: 20px;
     text-decoration: none;
     display: inline-block;
     font-family: AmsiProCond-Black;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 1em;
     background-color: #fff;
     color: #203a62;
     text-transform: uppercase;
 }
+.slider-content h3{
+    padding: 10px 15px;
+    background-color: #fff;
+    position: absolute;
+    top: -5%;
+    left: 3%;
+    color: #203a62;
+    font-family: AmsiProCond-Regular;
+    font-size: 1.2em;
+}
+.button-right {
+    cursor: pointer;
+    position: absolute;
+    top: 35%; 
+    right: -2%;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s ease;
+    background-color: #367ba7;
+}
+.slide1 img, .slide2 img, .slide3 img {
+    border: 2px solid #fff;
+    width: 95%;
+}
+
+.button-right:hover {
+    background-color: #459bd0a1;
+}
 
 /* FOOTER */
-@font-face{
-    src: url(/fonts/AmsiProCond-Bold.otf);
-    font-family: AmsiProCond-Bold;
-}
-@font-face{
-    src: url(/fonts/AmsiProCond-Italic.otf);
-    font-family: AmsiProCond-Italic;
-}
 .footer-container{
     width: 100%;
     display: flex;
@@ -280,56 +284,7 @@ body{
 }
 
 @media screen and (min-width: 768px){
-    /* BUTTON */
-    #myBtn{
-        padding: 18px;
-    }
-    
-    /* SECTION CONTENTS */
-    .container-content .text{
-        width: 12%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .container-content p{
-       font-size: 1.5em;
-       text-align: left;
-    }
-    .container-content .text a{
-        font-size: 1.3em;
-    }
-    .container-content .content img{
-        border: 3px solid #fff;
-        max-width: 450px;
-    }
-    .container-content .content h3{
-        font-size: 25px;
-    }
-    /* FOOTER */
-    .footer-container div{
-        width: 10%;
-        padding: 40px 30px;
-    }
-    .footer-container div p{
-        font-size: 1.5em;
-        line-height: 25px;
-    }
-    .footer-container #phrase{
-        font-size: 1.2em;
-    }
-    .footer-container #phone{
-        font-size: 1.7em;
-    }
-    .footer-container img{
-        max-width: 200px;
-    }
-    .contact i{
-        font-size: 25px;
-    }
-
-    /* SLIDER */
+    /* CARROSSEL TOPO  */
     .slide-prev, .slide-next {
         cursor: pointer;
         position: absolute;
@@ -351,4 +306,40 @@ body{
         height: 15px;
         width: 15px;
     }
+
+    /* BUTTON */
+    #myBtn{
+        padding: 18px;
+    }
+
+    /* SLIDERS */
+    .slider-content{
+        width: 15%;
+    }
+    .bloco1 .text, .bloco2 .text, .bloco3 .text{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .bloco1 .text p, .bloco2 .text p, .bloco3 .text p{
+        font-size: 1.5em;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+    .bloco1 .text a, .bloco2 .text a, .bloco3 .text a{
+         font-size: 1.1em;
+     }
+     .bloco1 img, .bloco2 img, .bloco3 img{
+         border: 3px solid #fff;
+         max-width: 450px;
+     }
+    /* FOOTER */
+    .footer-container div{
+        width: 10%;
+        height: 30px;
+    }
+
+
 }
