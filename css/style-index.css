@@ -21,15 +21,19 @@ body{
     src: url(../fonts/AmsiProCond-Italic.otf);
     font-family: AmsiProCond-Italic;
 }
-.mySlides img {
-    width: 100%;
-}
 .slideshow-container {
     overflow: hidden;
     position: relative;
     margin: auto;
     width: 100%;
     height: auto;
+}
+.mySlides {
+    display: flex;
+    justify-content: start;
+}
+.mySlides img {
+    width: 180%;  
 }
 .slide-prev, .slide-next {
     cursor: pointer;
@@ -59,6 +63,7 @@ body{
     position: absolute;
     bottom: 5%;
     left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 .slide-dot {
@@ -308,6 +313,9 @@ body{
     }
 
     /* CARROSSEL TOPO  */
+    .mySlides img {
+        width: 100%;  
+    }
     .slide-prev, .slide-next {
         cursor: pointer;
         position: absolute;
